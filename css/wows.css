@@ -1,0 +1,719 @@
+@charset "UTF-8";
+/* CSS Document */
+
+	A:link {color: black; text-decoration:none;}
+    A:visited {color: black; text-decoration:none;}
+    A:hover {text-decoration:none;}
+    A:active {text-decoration:none;}
+		
+	body {
+		background: #FFD324;
+		padding : 0;
+		margin: 0;
+		font-family: adobe-caslon-pro, source-han-serif-korean, serif;
+		font-weight: 400;
+		font-style: normal;
+		overflow-y: hidden;
+		}
+
+	@media screen and (max-width: 639px) {
+		.mmgrid {
+			display: block;
+			width:100%;
+			height : 45px;
+			border-bottom: solid black 1px;
+		}
+		ul {
+			margin: 0;
+			padding:0;
+			width:100%;
+		}
+		ul li {
+			list-style: none;
+			width: 100%;
+			text-align: center;	
+			display: inline-block; 
+			font-weight: 700;
+			height: 45px;
+		}
+		ul li p {
+			padding: 0;
+			margin:0;
+			position : relative;
+			top: 11px;
+		}
+		ul li ul {
+			display: none;
+		}
+		ul li:hover  ul {
+			position : absolute;
+			display: block;
+			top:46px;
+			font-weight: 400;
+			background: #FFD324;
+			z-index: 70
+		}
+		ul li ul li {
+			background: #FFD324;
+			height: 45px;
+			border-bottom: solid black 1px;
+		}
+		ul li ul li p {
+			padding: 0;
+			margin:0;
+			position : relative;
+			top: 10px;
+		}
+		#col1 {
+		display: none;
+		}
+		.cols p {
+	
+		}
+		.mgrid {
+			display : none;
+		}
+		.grid {
+			display : none;
+		}
+			.wrapper {
+				position: absolute;
+				top : 45px;
+				z-index: -1;
+			}
+		.wrapper div {
+			overflow-y: auto;
+		}
+		#col2 {
+		height: 97vh;
+	}	
+		.statcon {
+			width:100%
+		}
+		.script {
+			padding : 15px;
+		}
+		.mtitle {
+			width: 100%;
+			position: relative;
+			overflow: auto;
+			margin: auto;
+			background: none;
+			text-align: center;
+		}
+		.monologue {
+			margin: 0;
+			text-indent: 3em;
+			margin-top: 25px
+		}
+		.line {
+			margin: 0;
+			margin-top: 25px;
+			padding-left : 90px;
+		}
+		sup {
+			font-size: 0.5em;
+		}
+		.fword {
+			color: #FFD324;
+		}
+		.stat {
+			width: 100%;
+		}
+		#st1 img {
+			width : 90%;
+		}
+		.stat h3{
+			padding-left: 15px;
+			margin : 15px 0 15 0;
+		}
+		#mscrt {
+			background: #FFD324;
+			display: block;
+			position : fixed;
+			bottom : 70px;
+			right:0;
+			width : 50px;
+			height: 200px;
+			border: solid 1px black;
+			border-right: none;
+		}
+		#mscrt ul{
+		}
+		#mscrt ul li {
+			height: 50px;
+			padding:  0;
+		}#mscrt img  {
+			width: 10px;
+			position: relative;
+			top: 15px;
+		}
+		.stat {
+			width : 100%;
+		}
+		.stat h3{
+			padding-left: 15px;
+		}
+		.footnote {
+			padding: 15px 15px 0px 15px;
+			margin: auto;
+		}
+		.fnr {
+			width : 50%;
+			float: left;
+			padding: 0px;
+		}
+		.fnr div {
+			float: left;
+			width: 100%;
+			margin-bottom : 30px;
+		}
+		.fnr p {
+			margin-top : 0px;
+			padding:0px;
+		}
+		
+		.fnc {
+			width : 50%;
+			float : left;
+			font-style: italic;
+			text-align: center;
+		}
+		.fnc img {
+			max-height:30px;
+		}
+			#profane {
+		width : 90%;
+	}
+	.fnc p {
+		margin : 0px 0px 15px 0px;
+	}
+	.dictionwid {
+	padding-top: 15px;
+		}
+	.dictionary {
+		width : 100%;
+	}
+	.wor h1{
+		margin :0px;
+	}
+	.wor {
+		margin-bottom: 15px;
+	}
+	.wc{
+		margin: 0px;
+		padding-left: 15px;
+	}
+	.defi {
+		padding-left: 15px;
+	}
+	.wor img {
+		width : 100%;
+		padding-top: 10px;
+	}
+	.bigword {
+		margin : 0px;
+		font-size: 2em;
+		font-weight: 700;
+		margin-bottom : -10px;
+		padding: 0px 0px 0px 15px;
+	}
+	.sent {
+		margin : -15px 10px 0px 10px;
+	}
+	.sent p {
+		text-indent: 1em;
+	}
+	.exame {
+		margin-bottom : 0px;
+	}
+	.examk {
+		color : #B1912F;
+		font-size : 0.75em;
+		margin-top : 0px;
+		margin-bottom : 0px;
+	}
+		#st3 p {
+			text-align:left;
+			margin:0;
+			padding:0;
+		}
+		
+			#footer {
+		text-align: center;
+		position : fixed;
+		background: #FFD324;
+		bottom:0;
+   		width:100%;
+		height: 24px;
+		z-index: 99;
+	}
+	#footer div {
+		border-top: solid black 1px;		
+	}
+	}
+
+	@media screen and (min-width: 640px) and (max-width: 1023px) {
+		#mscrt {
+			display: none;
+		}
+		.mgrid {
+		display: block;
+		z-index: 100;
+		}
+		
+		.mgrid div {
+		float: left;
+		position: fixed;
+		text-align: center;
+		border-bottom: solid 1px black;
+		margin: 0px;
+	}
+		#mgrid1 {
+		width: 100%;
+		height: 45px;
+		font-weight: 700;
+		z-index: 10001;
+
+	}
+		#mgrid1 p {
+			position: relative;
+			top : -5.5px;
+		}
+		.row2 {
+		top : 46px;
+		width: 100%;
+		border-bottom: solid 1px black;
+		}
+		.row2 div {
+		height: 45px;
+		float :left;
+		position: relative;
+		border-bottom: none;
+		}
+		.row2 p {
+			position: relative;
+			top : -5.5px;
+		}
+		#mgrid2 {
+			width : 33%;
+			border-right: solid 1px black;
+		}
+		#mgrid3 {
+			width : 33%;
+		}
+		#mgrid3 ul {
+		display: inline-block;
+        padding: 0;
+		position: relative;
+		top: -5.5px;
+		z-index: 98;
+		border-bottom: none;
+		}
+		#mgrid3 ul li {
+			list-style: none;
+			float: left;
+			padding: 0 20px 0 20px;
+		}
+		#mgrid3 ul li img {
+			height: 10px;
+		}
+		#mgrid4 {
+			width : 33%;
+			border-left: solid 1px black;
+
+		}
+		.grid {
+	display: none;
+		}
+		.mmgrid {
+	display: none;
+		}
+	
+		.wrapper {
+		position : relative;
+		top : 92px;
+		z-index: -1;
+		}
+		.cols {
+		overflow: auto;
+		float:left;
+		background: #FFD324;
+		}
+			
+		#col1 {
+		display: none;
+		}
+
+		.script {
+		padding: 20px;
+		}		
+		#col2 {
+		width: 100%;
+		height: 90vh;
+
+		}
+		.script {
+			z-index: 10202;
+		}
+			.monologue {
+			margin: 0;
+			text-indent: 3em;
+			margin-top: 25px
+		}
+			.line {
+			margin: 0;
+			margin-top: 25px;
+			padding-left : 70px;
+		}
+			sup {
+			font-size: 0.5em;
+		}
+			.fword {
+			color: #FFD324;
+		}
+		.mtitle {
+			width: 100%;
+			position: relative;
+			top: -10px;
+			overflow: auto;
+			margin: auto;
+			background: none;
+			text-align: center;
+		}
+		.stat h3{
+			padding-left: 15px;
+		}
+		.footnote {
+			padding: 15px 15px 0px 15px;
+			margin: auto;
+		}
+		.fnr {
+			width : 100%;
+			float: left;
+			padding: 0px;
+		}
+		.fnr div {
+			float: left;
+			width: 30%;
+			margin-bottom : 30px;
+		}
+		.fnr p {
+			margin-top : 0px;
+			padding:0px;
+		}
+		.fnc {
+			width : 50%;
+			float : left;
+			font-style: italic;
+		}
+		.fnc img {
+			max-height: 30px;
+		}
+	.fnc p {
+		margin : 0px 0px 15px 0px;
+	}
+			#profane {
+		width : 90%;
+	}
+			#st3 p {
+
+		margin: 0px 30px 0px 30px;
+	}
+		.dictionwid {
+		padding: 15px;
+	}
+	.dictionary {
+		width : 45%;
+		margin-right: 5%;
+		position: relative;
+		float : left;
+	}
+	.wor h1{
+		margin :0px;
+	}
+	.wor {
+		margin-bottom: 15px;
+	}
+	.wc{
+		margin: 0px;
+	}
+	.wor img {
+		width : 100%;
+		padding-top: 10px;
+	}
+	.bigword {
+		margin : 0px;
+		font-size: 2em;
+		font-weight: 700;
+		margin-bottom : -10px;
+	}
+	.sent {
+		margin : -15px 10px 0px 10px;
+	}
+	.sent p {
+		text-indent: 1em;
+	}
+	.exame {
+		margin-bottom : 0px;
+	}
+	.examk {
+		color : #B1912F;
+		font-size : 0.75em;
+		margin-top : 0px;
+		margin-bottom : 0px;
+	}
+	#footer {
+		text-align: center;
+		position : fixed;
+		background: #FFD324;
+		bottom:0;
+   		width:100%;
+		height: 24px;
+		z-index: 99;
+	}
+	#footer div {
+		border-top: solid black 1px;		
+	}
+}
+		
+@media screen and (min-width: 1024px) {
+	#mscrt {
+		display: none;
+	}
+	.mgrid {
+		display: none;
+	}
+	.mmgrid {
+		display: none;
+		}
+	.grid {
+		position: fixed;
+		border-bottom: solid 1px black;
+		background: #FFD324;		
+		height: 58px;
+		width : 100%;
+		z-index: 100;
+	}
+	.grid div {
+		float: left;
+		position: fixed;
+		text-align: center;
+	}
+	#grid1 {
+		width: 20%;
+		text-align: left;
+		top: -5.5px;
+		left: 10px;
+		font-weight: 700;
+		line-height: 16pt;
+	}
+	#grid2 {
+		width :15%;
+		border-left: solid black 1px;
+		border-right: solid black 1px;
+		left: 20%;
+	}
+	#grid3 {
+		width: 30%;
+		border-left: none;
+		left: 35%;
+	}
+		#grid3 ul {
+		display: inline-block;
+        margin: 15px 0;
+        padding: 0;
+		}
+		#grid3 ul li {
+			list-style: none;
+			float: left;
+			padding: 0 30px 0 30px;
+		}
+		#grid3 ul li img {
+			height: 10px;
+		}
+	#grid4 {
+		width: 34.9%;
+		border-left: solid black 1px;
+		left: 65%;
+	}
+	.wrapper {
+		position: relative;
+		top: 58px;
+		border-top: 0px;
+		z-index: -1;
+	}
+	.cols {
+		overflow: auto;
+		position: relative;
+		float:left;
+		border-left: solid 1px black;
+	}
+	#col1 {
+		display : block;
+		width: 50%;
+		border: none;
+	}
+	#col1 p {
+		padding-left : 15px;
+	}
+	#col1 a:hover {
+		text-decoration: underline;
+	}
+	.scap1 {
+		height : 300px;
+		border-bottom: solid 1px black;
+		padding-right: 15px;
+	}
+	.scap2 {
+		height : 43%;
+		padding-right: 15px;
+	}
+	#col1 h3{
+		padding-left : 15px;
+		margin-bottom : 0px;
+	}
+	.script {
+		padding: 20px;
+		}
+	.title {
+		text-align: center;
+		}
+	#gifcon {
+		align-items: center;
+		position: relative;
+		display: none;
+		}
+	#gifcon img {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 400px;
+		}
+	#col2 {
+		width: 49.9%;
+		height: 97vh;
+		}	
+
+		.monologue {
+			margin: 0;
+			text-indent: 3em;
+			margin-top: 25px
+		}
+		.line {
+			margin: 0;
+			margin-top: 25px;
+			padding-left : 90px;
+		}
+		sup {
+			font-size: 0.5em;
+		}
+		.fword {
+			color: #FFD324;
+		}
+		.mtitle {
+			display: none;
+		}
+		.stat h3{
+			padding-left: 15px;
+		}
+	.stat {
+		width : 100%;
+	}
+	.stat img {
+	}
+		.footnote {
+			padding: 15px 15px 0px 15px;
+			margin: auto;
+		}
+	.footnote div {
+		float : left;
+	}
+	#profane {
+		width : 90%;
+	}
+		.fnr {
+			width : 100%;
+			float: left;
+			padding: 0px;
+		}
+		.fnr div {
+			float: left;
+			width: 30%;
+			margin-bottom : 30px;
+		}
+		.fnr p {
+			margin-top : 0px;
+			padding:0px;
+		}
+		.fnc {
+			width : 50%;
+			float : left;
+			font-style: italic;
+		}
+		.fnc img {
+			max-height: 30px;
+		}
+	.fnc p {
+		margin : 0px 0px 15px 0px;
+	}
+	
+	#st3 p {
+		margin: 0px 30px 0px 30px;
+	}
+	.dictionwid {
+		padding: 15px;
+	}
+	.dictionary {
+		width : 45%;
+		margin-right: 5%;
+		position: relative;
+		float : left;
+	}
+	.wor h1{
+		margin :0px;
+	}
+	.wor {
+		margin-bottom: 15px;
+	}
+	.wc{
+		margin: 0px;
+	}
+	.wor img {
+		width : 100%;
+		padding-top: 10px;
+	}
+	.bigword {
+		margin : 0px;
+		font-size: 2em;
+		font-weight: 700;
+		margin-bottom : -10px;
+	}
+	.sent {
+		margin : -15px 10px 0px 10px;
+	}
+	.sent p {
+		text-indent: 1em;
+	}
+	.exame {
+		margin-bottom : 0px;
+	}
+	.examk {
+		color : #B1912F;
+		font-size : 0.75em;
+		margin-top : 0px;
+		margin-bottom : 0px;
+	}
+	#footer {
+		text-align: center;
+		position:fixed;
+		background: #FFD324;
+		bottom:0;
+   		width:100%;
+		height: 24px;
+		z-index: 99;
+	}
+	#footer div {
+		border-top: solid black 1px;		
+	}
+}
